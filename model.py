@@ -41,14 +41,14 @@ def prediction(stock, n_days):
     for i in range(n_days):
         current += timedelta(days=1)
         dates.append(current)
+
+    # Calculate the classification report
+    #from sklearn.metrics import classification_report
+    #predictions = best_svr.predict(x_test)
+    #print(classification_report(y_test, predictions)) 
     
     # Model Accuracy
     print('Test Acc: %.3f' % best_svr.score(x_test, y_test))
-
-    # Calculate the classification report
-    from sklearn.metrics import classification_report
-    predictions = best_svr.predict(x_test)
-    print(classification_report(y_test, predictions)) 
 
     # Plot the results
     fig = go.Figure()

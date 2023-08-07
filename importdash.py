@@ -171,6 +171,7 @@ def get_more(df):
      State("stock-code", "value")]
 )
 def forecast(n, n_days, val):
+    #print(f"n_days: {n_days}\n n: {n}\n val: {val}")
     if n is None:
         return [""]
     if val is None:
