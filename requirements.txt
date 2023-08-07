@@ -1,4 +1,4 @@
-﻿appdirs==1.4.4
+appdirs==1.4.4
 autopep8==2.0.1
 beautifulsoup4==4.11.1
 certifi==2022.12.7
