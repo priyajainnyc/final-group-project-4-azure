@@ -15,7 +15,7 @@ This project aims to provide a simple yet effective tool for stock market invest
 
 The project structure consists of the following files:
 
-1. `importdash.py` - Main application file containing the Dash app instance and layout.
+1. `app.py` - Main application file containing the Dash app instance and layout.
 2. `model.py` - A helper file containing functions to fetch data from the yfinance library and to train and predict stock prices using a machine learning algorithm.
 3. `assets/styles.css` - A file to style the webpage. 
 4. `requirements.txt` - A file containing all the dependencies required to run the application.
@@ -55,7 +55,7 @@ Make sure you have installed all of the following prerequisites on your developm
 
 ## Usage
 
-To use the application, simply run the `importdash.py` file in your Python environment and open a web browser to the specified address. The user will be presented with a single page interface, where they can enter a company stock code and a date range for which they would like to see the stock data plotted. 
+To use the application, simply run the `app.py` file in your Python environment and open a web browser to the specified address. The user will be presented with a single page interface, where they can enter a company stock code and a date range for which they would like to see the stock data plotted. 
 
 Once the user enters the stock code and date range, the application will fetch the relevant stock data using the yfinance library and plot the stock price data. Additionally, the user can select an option to view predicted stock prices based on a machine learning algorithm trained on the historical data.
 
