@@ -7,7 +7,7 @@ Soo Bin Im, Max Young, Meardreed Vilmeus, Priya Jain
 # Project Title
 Stock Predictions: To Bull or To Bear?
 
-## Project Description: Stock Prediction Web Application using Dash and Machine Learning
+## Project Description: Stock Prediction Web Application using Dash and SVR Machine Learning
 
 This project aims to provide a simple yet effective tool for stock market investors to visualize company stock data and make predictions based on machine learning models. The web application is built using the Dash framework, a Python library for building web applications with interactive user interfaces.
 
@@ -72,6 +72,7 @@ We've provided the below listed visualizations for AI specific stock data pulled
 - Performance % Past Year With Team Recommendation Category 
 - Target vs. Current Price With Team Recommendation Category 
 - Stock Price 52 Week Hi, Lo, Current vs. Target Price
+- Sentiment Analysis
 
 ## Conclusion
 
