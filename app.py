@@ -76,16 +76,14 @@ app.layout = html.Div(className='container', children=[item1, item2])
 
 # Callback to update the data based on the submitted stock code
 @app.callback(
-    [
-        Output("description", "children"),
-        Output("logo", "src"),
-        Output("company-name", "children"),
-        Output("stock-price-button", "n_clicks"),
-        Output("indicators-button", "n_clicks"),
-        Output("forecast-button", "n_clicks")
-    ],
-    [Input("submit-button", "n_clicks")],
-    [State("stock-code", "value")]
+    Output("description", "children"),
+    Output("logo", "src"),
+    Output("company-name", "children"),
+    Output("stock-price-button", "n_clicks"),
+    Output("indicators-button", "n_clicks"),
+    Output("forecast-button", "n_clicks"),
+    Input("submit-button", "n_clicks"),
+    State("stock-code", "value")
 )
 def update_data(n, val):
     if n is None:
@@ -107,13 +105,11 @@ def update_data(n, val):
 
 # Callback for displaying stock price graphs
 @app.callback(
-    [Output("graphs-content", "children")],
-    [
-        Input("stock-price-button", "n_clicks"),
-        Input('date-range', 'start_date'),
-        Input('date-range', 'end_date')
-    ],
-    [State("stock-code", "value")]
+    Output("graphs-content", "children"),
+    Input("stock-price-button", "n_clicks"),
+    Input('date-range', 'start_date'),
+    Input('date-range', 'end_date'),
+    State("stock-code", "value")
 )
 def stock_price(n, start_date, end_date, val):
     if n is None:
@@ -133,13 +129,11 @@ def stock_price(n, start_date, end_date, val):
 
 # Callback for displaying indicators
 @app.callback(
-    [Output("main-content", "children")],
-    [
-        Input("indicators-button", "n_clicks"),
-        Input('date-range', 'start_date'),
-        Input('date-range', 'end_date')
-    ],
-    [State("stock-code", "value")]
+    Output("main-content", "children"),
+    Input("indicators-button", "n_clicks"),
+    Input('date-range', 'start_date'),
+    Input('date-range', 'end_date'),
+    State("stock-code", "value")
 )
 def indicators(n, start_date, end_date, val):
     if n is None:
@@ -165,10 +159,10 @@ def get_more(df):
 
 # Callback for displaying forecast
 @app.callback(
-    [Output("forecast-content", "children")],
-    [Input("forecast-button", "n_clicks")],
-    [State("forecast-days", "value"),
-     State("stock-code", "value")]
+    Output("forecast-content", "children"),
+    Input("forecast-button", "n_clicks"),
+    State("forecast-days", "value"),
+    State("stock-code", "value")
 )
 def forecast(n, n_days, val):
     #print(f"n_days: {n_days}\n n: {n}\n val: {val}")
