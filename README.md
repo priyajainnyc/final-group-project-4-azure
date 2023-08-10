@@ -52,6 +52,7 @@ Make sure you have installed all of the following prerequisites on your developm
 - git clone `https://github.com/priyajainnyc/group-project-4-azure`
 - Open the repo in a code editor to see the codes
 - Visit [localhost: 8050](http://127.0.0.1:8050/) in your browser
+- Azure Web Services Link 'https://stock-predictions-rev.azurewebsites.net`
 
 ## Usage
 
