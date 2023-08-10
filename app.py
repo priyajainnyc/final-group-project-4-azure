@@ -12,6 +12,8 @@ import plotly.express as px
 # modelp
 from model import prediction
 
+#test
+
 from sklearn.svm import SVR
 
 app = dash.Dash(__name__, external_stylesheets=['assets\styles.css'])
