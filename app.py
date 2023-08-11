@@ -22,7 +22,7 @@ server = app.server
 # Navigation component
 item1 = html.Div(
     [
-        html.P("Welcome to the Stock Dash App!", className="start"),
+        html.P("Welcomed to the Stock Dash App!", className="start"),
 
         html.Div([
             # stock code input
